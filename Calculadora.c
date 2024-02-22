@@ -22,6 +22,8 @@ int main()
     {
         if (stricmp(opt, "suma") == 0)
         {
+            res = a + b;
+            printf("\nSuma: %.2f", res);
             printf("\nSuma");
           
         }
