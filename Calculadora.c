@@ -33,14 +33,9 @@ int main()
         {
             printf("\nmMultiplicacion");
         }
-        else if (stricmp(opt, "division") == 0){
-            if (b != 0) {
-                res = a / b;
+        else if (stricmp(opt, "division") == 0)
+        {
                 printf("\nDivision: %.2f", res);
-            } else {
-                printf("\nError: No se puede dividir por cero.");
-                return 0;
-            }
         }
         else
         {
