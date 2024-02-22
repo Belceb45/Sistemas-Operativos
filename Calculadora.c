@@ -4,6 +4,7 @@
 #include <math.h>
 #include <string.h>
 
+void multiplicacion(float *,float *,float*);
 
 int main()
 {
@@ -33,6 +34,8 @@ int main()
         else if (stricmp(opt, "multiplicacion") == 0)
         {
             printf("\nmMultiplicacion");
+            multiplicacion(&a,&b,&res);
+            printf("\nResultado: %.1f, res");
         }
         else if (stricmp(opt, "division") == 0)
         {
@@ -48,4 +51,7 @@ int main()
 
 }
 
-
+void multiplicacion(float *x, float *y, float *res)
+{
+    *res = (*x) * (*y);
+}
