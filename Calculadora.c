@@ -6,7 +6,7 @@
 
 // Prototipos
 void suma(float *, float *,float *);
-//  void resta(float *,float *,float *);
+void resta(float *,float *,float *);
 //  void multiplicacion(float *,float *,float*);
 //  void division(float *,float *,float*);
 
@@ -34,6 +34,8 @@ int main()
         else if (stricmp(opt, "resta") == 0)
         {
             printf("\nResta");
+            resta(&a,&b,&res);
+            printf("\nResultado: %.1f",res);
         }
 
         else if (stricmp(opt, "multiplicacion") == 0)
@@ -58,4 +60,9 @@ int main()
 void suma(float *x, float *y,float *res)
 {
     *res = (*x) + (*y);
+}
+
+void resta(float *x, float *y,float *res)
+{
+    *res = (*x) - (*y);
 }
